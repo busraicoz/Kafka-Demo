@@ -1,0 +1,12 @@
+com\kafka\demo\service\RandomLogGeneratorService.class
+com\kafka\demo\repository\CityLogRepository.class
+com\kafka\demo\consumer\ConsumerCreator.class
+com\kafka\demo\controller\CityLogRestController.class
+com\kafka\demo\constants\IKafkaConstants.class
+com\kafka\demo\service\LogProducerService.class
+com\kafka\demo\configuration\DatabaseConfiguration.class
+com\kafka\demo\entity\CityLog.class
+com\kafka\demo\service\LogConsumerService.class
+com\kafka\demo\controller\CityLogController.class
+com\kafka\demo\Application.class
+com\kafka\demo\producer\ProducerCreator.class

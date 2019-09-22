@@ -1,0 +1,4 @@
+com\kafka\demo\controller\CityLogRestControllerTest.class
+com\kafka\demo\consumer\ConsumerCreatorTest.class
+com\kafka\demo\service\RandomLogGeneratorServiceTest.class
+com\kafka\demo\producer\ProducerCreatorTest.class

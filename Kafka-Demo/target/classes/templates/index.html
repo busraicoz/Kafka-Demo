@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <h1 th:text="${message}"></h1>
+
+    <script type="text/javascript">
+        var istanbulLog = [[${istanbul}]];
+        var tokyoLog = [[${tokyo}]];
+        var beijingLog = [[${beijing}]];
+        var moskowLog = [[${moskow}]];
+        var londonLog = [[${london}]];
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                theme: "light1",
+                animationEnabled: true, // change to true
+                title:{
+                    text: "Cities's Log Counts"
+                },
+                data: [
+                    {
+                    type: "bar",
+                        dataPoints: [
+                            { label: "Istanbul",  y: parseInt(istanbulLog)},
+                            { label: "Moscow", y: parseInt(moskowLog)  },
+                            { label: "Tokyo", y: parseInt(tokyoLog)  },
+                            { label: "London",  y: parseInt(londonLog)  },
+                            { label: "Beijing",  y: parseInt(beijingLog)  }
+                        ]
+                    }
+                ]
+            });
+            chart.render();
+        }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+</body>
+</html>
